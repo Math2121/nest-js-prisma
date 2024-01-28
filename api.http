@@ -1,0 +1,47 @@
+GET http://localhost:3000/categories
+
+###
+GET http://localhost:3000/categories/1
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name":"Category 3"
+}
+
+###
+PACTH http://localhost:3000/categories/1
+{
+    "name":"Category 2"
+}
+
+###
+DELETE http://localhost:3000/categories/1
+
+
+###
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/1
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"Product 3",
+    "price": 300,
+    "categoryId": 1
+}
+
+###
+PACTH http://localhost:3000/products/1
+{
+    "name":"Product 2"
+}
+
+###
+DELETE http://localhost:3000/products/1
